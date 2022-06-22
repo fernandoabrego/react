@@ -1,11 +1,14 @@
 import React from "react"
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import CartWidget from "./CartWidget";
+
 
 
 export default function NavBar(){
     return (
     <>
         <Navbar bg="light" expand="lg">
+        <CartWidget/>
           <Navbar.Brand className="ms-4"><img src="https://fernandoabrego.github.io/Proyecto-Final/images/PETITS%20LOGO.png" style={{height:"40px", width:"40px"}} alt="Logo Petit Cotons"/></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
