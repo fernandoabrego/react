@@ -1,5 +1,5 @@
 import Button from 'react-bootstrap/Button'
-    import React, {useState} from "react";
+import React, {useState} from "react";
 import { Container, Row} from 'react-bootstrap';
 
     export default function ItemCount({initial, stock}){
