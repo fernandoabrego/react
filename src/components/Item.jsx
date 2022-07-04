@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, Button} from "react-bootstrap"
+import {Card} from "react-bootstrap"
 import ItemCount from "./ItemCount";
 export default function Item({id, nombre, precio, img}){
     return (
@@ -11,7 +11,6 @@ export default function Item({id, nombre, precio, img}){
     <Card.Text>
         {precio}
     </Card.Text>
-    <Button variant="primary">Ir</Button>
     <ItemCount initial={1} stock={8}/>
   </Card.Body>
 </Card>

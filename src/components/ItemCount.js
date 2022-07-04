@@ -24,12 +24,12 @@ import { Container, Row} from 'react-bootstrap';
         <>
         <Container >
         <Row>
-        <h2 className='text-center'>Producto 1</h2>
         <Button onClick={increase} variant="success">+</Button>
         <p className='text-center'>{count}</p>
         <Button onClick={decrease} variant="danger">-</Button>
         <Button className='mt-3' onClick={onAdd} variant="primary">Agregar al carrito.</Button>
         <Button className='mt-3' onClick={reset} variant="warning">Vaciar carrito.</Button>
+        <Button className='mt-3'> Ver detalle</Button>
         </Row>
         </Container>
         </>

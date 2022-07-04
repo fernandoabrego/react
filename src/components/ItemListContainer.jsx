@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ItemList from "./ItemList"
 import Productos from "./Productos"
 import Promesas from "./Promesas";
+import s from './ItemListContainer.module.css'
 
     export default function ItemListContainer(){
         const [items, setItems] = useState([]);
@@ -13,7 +14,8 @@ import Promesas from "./Promesas";
         }, [items])
         return (
             <div>
-    <ItemList Productos={items}/>
+                <div className={s.contenedor}></div>
+                <ItemList Productos={items}/>
     </div>
     );
 }
