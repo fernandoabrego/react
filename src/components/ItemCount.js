@@ -28,7 +28,6 @@ import { Container, Row} from 'react-bootstrap';
         <Button onClick={decrease} variant="danger">-</Button>
         <Button className='mt-3' onClick={onAddCount/* Otra forma, por el momento no lo borramos, luego quedará solo una()=>onAdd(count) */} variant="primary">Agregar al carrito.</Button>
         <Button className='mt-3' onClick={reset} variant="warning">Vaciar carrito.</Button>
-        <Button className='mt-3'>Ver detalle</Button>
         </Row>
         </Container>
         </>

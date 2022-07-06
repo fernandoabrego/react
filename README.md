@@ -1,3 +1,4 @@
+Se añadieron loadings y pantalla de página inexistente para urls desconocidas, la utilización de filter y find para categorías e id, las categorías se encuentran en un desplegable, poseen sus respectivos productos y cuentan con navegabilidad y efectos.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

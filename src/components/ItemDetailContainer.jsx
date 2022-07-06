@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from "./ItemDetail";
 import Promesas from "./Promesas";
-import { product } from './Productos';
+import Productos from './Productos';
+import { useParams } from 'react-router-dom';
 
 export default function ItemDetailContainer (){
-    const [Producto, setProductos] = useState({});
-        useEffect(() => {
-        Promesas(2000, product)
+    const [producto, setProductos] = useState();
+    const [loading, setLoading] = useState(true)
+    const {id} = useParams()
+            useEffect(() => {
+        Promesas(1000, 'Items', Productos, id)
             .then(res => setProductos(res))
-            .catch(error => console.log(error));
+            .catch(error => console.log(error))
+            .finally(()=>{
+                setLoading(false)
+            })
         }, [])
 return(
     <>
     <div>
-        <ItemDetail {...Producto}/>
+    {loading ? (<h2>Cargando productos</h2>) : (producto && <ItemDetail {...producto}/>)}
     </div>
     </>
 )
