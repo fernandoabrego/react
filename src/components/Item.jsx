@@ -2,6 +2,10 @@ import React from "react";
 import {Card} from "react-bootstrap"
 import ItemCount from "./ItemCount";
 export default function Item({id, nombre, precio, img}){
+  function agregar(cantidad){
+    if (cantidad > 0){
+    alert ("Agregaste " + cantidad + " productos al carrito.")}
+}
     return (
         <>
         <Card key={id} style={{ width: '18rem' }}>
@@ -11,7 +15,7 @@ export default function Item({id, nombre, precio, img}){
     <Card.Text>
         {precio}
     </Card.Text>
-    <ItemCount initial={1} stock={8}/>
+    <ItemCount initial={1} stock={8} onAdd={agregar}/>
   </Card.Body>
 </Card>
         </>
