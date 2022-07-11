@@ -9,7 +9,6 @@ import s from './ItemListContainer.module.css'
         const [items, setItems] = useState([]);
         const [loading, setLoading] = useState(true)
         const {categoriaId} = useParams()
-        console.log(categoriaId);
 
         useEffect(() => {
             Promesas(1000, 'categoria', Productos, categoriaId)
