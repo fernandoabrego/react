@@ -4,10 +4,10 @@ import {Card, Button} from "react-bootstrap"
 import { Link } from "react-router-dom";
 
 export default function Item({id, nombre, precio, img}){
-  function agregar(cantidad){
+/*   function agregar(cantidad){
     if (cantidad > 0){
     alert ("Agregaste " + cantidad + " productos al carrito.")}
-}
+} */
     return (
         <>
           <Card key={id} style={{ width: '18rem' }}>
